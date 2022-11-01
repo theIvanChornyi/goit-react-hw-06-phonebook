@@ -18,6 +18,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 const persistConfigContacts = {
   key: 'contacts',
   storage,
+  whitelist: ['contacts'],
 };
 
 const persistedReducerCont = persistReducer(
